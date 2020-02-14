@@ -6,7 +6,7 @@
 * If you already have easily accessible examples of your own code you want to use instead, email us!
 * We will use this as a way to initially analyse your abilities as well as in the phone interview, for a code review and starting off point for a general technical discussion.
 * If you have any feedback on the interview process, email us! 
-* Go straight to [#task-spec]
+* Go straight to [Task Specification][https://github.com/PepperHQ/backend-challenge/blob/master/README.md#task-specification]
 
 ## General
 From our point of view, an arbitrary whiteboard test assessed by interviewers looking over your shoulder is an unrealistic way to measure how developers actually work on a day-to-day basis. Instead, we have tried to produce a challenge that represents the type of work that we do at PepperHQ for you to complete at your own pace.
