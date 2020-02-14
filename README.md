@@ -6,7 +6,7 @@
 * If you already have easily accessible examples of your own code you want to use instead, email us!
 * We will use this as a way to initially analyse your abilities as well as in the phone interview, for a code review and starting off point for a general technical discussion.
 * If you have any feedback on the interview process, email us! 
-* Go straight to [Task specification][TASK_SPEC]
+* Go straight to [#task-spec]
 
 ## General
 From our point of view, an arbitrary whiteboard test assessed by interviewers looking over your shoulder is an unrealistic way to measure how developers actually work on a day-to-day basis. Instead, we have tried to produce a challenge that represents the type of work that we do at PepperHQ for you to complete at your own pace.
@@ -20,7 +20,7 @@ We are always open to iterating on our interview process so please email us if y
 ## Contact Details
 Email address: devchallenge@pepperhq.com
 
-# [TASK_SPEC]:Task specification
+# [Task Specification](#task-spec)
 
 When a user starts the ordering journey, they are presented with a menu to select food & drinks from. In most cases, the menu is pulled from from a 3rd party such as a merchant's point of sales system. In some cases, the menu from the 3rd party won't map directly to our menu schema so we will need to extend it with extra information such as human-readable titles before showing it to the user. Some of these 3rd parties also have rate limited APIs so we cache this menu every 24 hours.
 
