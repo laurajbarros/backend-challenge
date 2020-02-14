@@ -2,7 +2,7 @@
 
 ## TL;DR
 * Coding challenge represents day-to-day work at PepperHQ
-* Estimated time to complete: 2/3 hours
+* Estimated time to complete: **2/3 hours**
 * If you already have easily accessible examples of your own code you want to use instead, email us!
 * We will use this as a way to initially analyse your abilities as well as in the phone interview, for a code review and starting off point for a general technical discussion.
 * If you have any feedback on the interview process, email us! 
