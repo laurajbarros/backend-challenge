@@ -4,7 +4,7 @@
 * Coding challenge represents day-to-day work at PepperHQ
 * Estimated time to complete: **2/3 hours**
 * If you already have easily accessible examples of your own code you want to use instead, email us!
-* We will use this as a way to initially analyse your abilities as well as in the phone interview, for a code review and starting off point for a general technical discussion.
+* We will use this as a way to initially analyse your abilities as well as for a code review and starting off point for a general technical discussion in the next step of the interview.
 * If you have any feedback on the interview process, email us! 
 * Go straight to [Task Specification](#task-specification)
 
@@ -25,10 +25,8 @@ Email address: devchallenge@pepperhq.com
 When a user starts the ordering journey, they are presented with a menu to select food & drinks from. In most cases, the menu is pulled from from a 3rd party such as a merchant's point of sales system. In some cases, the menu from the 3rd party won't map directly to our menu schema so we will need to extend it with extra information such as human-readable titles before showing it to the user. Some of these 3rd parties also have rate limited APIs so we cache this menu every 24 hours.
 
 The task is to build an api with a singular endpoint `/menu/:id` that:
-* Pulls the menu from the fake point of sale service
-* Extends the product's in the menu with a list of human-readable titles from titles.json
+* Pulls the menu from our fake point of sale service `http://backend-challenge-pos.pepperhq.com/menu.json`
+* Extends the product's in the menu with the list of human-readable titles from `titles.json`
 * Caches the menu with a 24 hour expiration policy
 * Returns the menu as json
-
-
 
