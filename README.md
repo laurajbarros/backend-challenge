@@ -18,10 +18,9 @@ We are always open to improving on our interview process so please email us if y
 
 ## [Instructions](#instructions)
 
-* Fork this github template into a new repo
+* Copy or fork this github template into a new repo
 * Complete the coding [Challenge](#challenge)
-* Send a link to the github repo containing your solution to devchallenge@pepperhq.com
-
+* Invite devchallenge@pepperhq.com to the repository.
 
 ## [Challenge](#challenge)
 
@@ -35,6 +34,6 @@ We would like you to build a REST api service with a singular endpoint `/menu` t
 * Caches the menu with a 24 hour expiration policy
 * Returns the extended menu as json with a 200 OK status code
 
-We would prefer you to use `nodejs` and `typescript`, but you can use other tech / languages if you prefer
+We would prefer you to use `Node.js` and `TypeScript` as that's what we use, but you can use other tech / languages if you prefer.
 
 
