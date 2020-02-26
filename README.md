@@ -1,32 +1,40 @@
-# PepperHQ Back-end/Full Stack developer challenge
+# PepperHQ Backend (Full Stack) Developer Challenge
 
 ## TL;DR
-* Coding challenge represents day-to-day work at PepperHQ
+* The coding challenge is the first stage of our interview process at Pepper
+* Instructions on how to complete: [Instructions](#instructions)
+* The challenge we want you to complete: [Challenge](#challenge)
 * Estimated time to complete: **2/3 hours**
-* If you already have easily accessible examples of your own code you want to use instead, email us!
-* We will use this as a way to initially analyse your abilities as well as for a code review and starting off point for a general technical discussion in the next step of the interview.
-* If you have any feedback on the interview process, email us! 
-* Go straight to [Task Specification](#task-specification)
+* No need to do the challenge if you already have written similar code: email us a link to that repo instead
 
-## General
-From our point of view, an arbitrary whiteboard test assessed by interviewers looking over your shoulder is an unrealistic way to measure how developers actually work on a day-to-day basis. Instead, we have tried to produce a challenge that represents some of the work that we do at PepperHQ.
+## Introduction
 
-This is a way for candidates to demonstrate their abilities to us if they don't have any freely accessible examples already. If you already have easily accessible examples that you feel demonstrates your abilities, feel free to send us an email and we can use this instead. 
+In our opinion, a whiteboard test assessed by interviewers looking over your shoulder is an unrealistic way to measure how developers actually work on a day-to-day basis. Instead, we have tried to produce a challenge that represents some of the work that we do at Pepper.  This is a way for candidates to demonstrate their abilities to us if they don't have any freely accessible code examples already. If you already have easily accessible examples that you think demonstrate your abilities, then feel free to send us an email and we can use them instead. 
 
-After completing the coding challenge, one of our developers will analyse it. If this is positive, we will go on to the second stage of the process where we will use it as a way to start a dialogue in the form of a code review and general technical discussion.
+After you have completed the coding challenge, one of our developers will review it. If this is positive, we will invite you to the next stage of the process.  As part of that stage,  we will review your challenge solution with you and have a general technical discussion about it.
 
-We are always open to iterating on our interview process so please email us if you have any feedback.
+We are always open to improving on our interview process so please email us if you have any feedback.
 
-## Contact Details
-Email address: devchallenge@pepperhq.com
 
-# [Task Specification](#task-specification)
+## [Instructions](#instructions)
 
-When a user starts the ordering journey, they are presented with a menu to select food & drinks from. In most cases, the menu is pulled from from a 3rd party such as a merchant's point of sales system. In some cases, the menu from the 3rd party won't map directly to our menu schema so we will need to extend it with extra information such as human-readable titles before showing it to the user. Some of these 3rd parties also have rate limited APIs so we implement caching to avoid hitting these limits.
+* Fork this github template into a new repo
+* Complete the coding [Challenge](#challenge)
+* Send a link to the github repo containing your solution to devchallenge@pepperhq.com
 
-The task is to build an api with a singular endpoint `/menu` that:
+
+## [Challenge](#challenge)
+
+When a user starts the ordering journey in a Pepper App, they are presented with a menu to select food & drinks from.
+
+Menus are retrieved from a 3rd party such as a merchant's point of sales system. In some cases, a menu from the 3rd party won't map directly to our menu schema so we will need to extend it with extra information such as human-readable titles before showing it to the user. Also, some of these 3rd parties also have rate limited APIs, so we need to implement caching to avoid hitting these limits.
+
+We would like you to build a REST api service with a singular endpoint `/menu` that:
 * Fetches the menu from our fake point of sale service: `http://backend-challenge-pos.pepperhq.com/menu.json`
 * Extends the product's in the menu with the list of human-readable titles from `titles.json`
 * Caches the menu with a 24 hour expiration policy
 * Returns the extended menu as json with a 200 OK status code
+
+We would prefer you to use `nodejs` and `typescript`, but you can use other tech / languages if you prefer
+
 
