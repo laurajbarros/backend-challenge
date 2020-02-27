@@ -30,7 +30,7 @@ Menus are retrieved from a 3rd party such as a merchant's point of sales system.
 
 We would like you to build a REST api service with a singular endpoint `/menu` that:
 * Fetches the menu from our fake point of sale service: `http://backend-challenge-pos.pepperhq.com/menu.json`
-* Extends the product's in the menu with the list of human-readable titles from `titles.json`
+* Extends the products in the menu with the list of human-readable titles from `titles.json`
 * Caches the menu with a 24 hour expiration policy
 * Returns the extended menu as json with a 200 OK status code
 
