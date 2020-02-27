@@ -4,12 +4,12 @@
 * The coding challenge is the first stage of our interview process at Pepper
 * Instructions on how to complete: [Instructions](#instructions)
 * The challenge we want you to complete: [Challenge](#challenge)
-* Estimated time to complete: **2/3 hours**
+* Estimated time to complete: **2**
 * No need to do the challenge if you already have written similar code: email us a link to that repo instead
 
 ## Introduction
 
-In our opinion, a whiteboard test assessed by interviewers looking over your shoulder is an unrealistic way to measure how developers actually work on a day-to-day basis. Instead, we have tried to produce a challenge that represents some of the work that we do at Pepper.  This is a way for candidates to demonstrate their abilities to us if they don't have any freely accessible code examples already. If you already have easily accessible examples that you think demonstrate your abilities, then feel free to send us an email and we can use them instead. 
+In our opinion, a whiteboard test assessed by interviewers looking over your shoulder is an unrealistic way to measure how developers actually work on a day-to-day basis. Instead, we have tried to produce a challenge that represents a simplified version of some of the work that we do at Pepper.  This is a way for candidates to demonstrate their abilities to us if they don't have any freely accessible code examples already. If you already have easily accessible examples that you think demonstrate your abilities, then feel free to send us an email and we can use them instead. 
 
 After you have completed the coding challenge, one of our developers will review it. If this is positive, we will invite you to the next stage of the process.  As part of that stage,  we will review your challenge solution with you and have a general technical discussion about it.
 
