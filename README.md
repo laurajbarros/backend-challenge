@@ -4,7 +4,7 @@
 * The coding challenge is the first stage of our interview process at Pepper
 * Instructions on how to complete: [Instructions](#instructions)
 * The challenge we want you to complete: [Challenge](#challenge)
-* Estimated time to complete: **2**
+* Estimated time to complete: **2 hours**
 * No need to do the challenge if you already have written similar code: email us a link to that repo instead
 
 ## Introduction
