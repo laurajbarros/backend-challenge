@@ -20,7 +20,7 @@ We are always open to improving on our interview process so please email us if y
 
 * Copy or fork this github template into a new repo
 * Complete the coding [Challenge](#challenge)
-* Invite devchallenge@pepperhq.com to the repository.
+* Invite the user "PepperhqDevChallenge" to the repository.
 
 ## [Challenge](#challenge)
 
