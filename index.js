@@ -5,27 +5,30 @@ var functions = require("./libs/functions.js");
 const titles = require('./titles.json');
 var cache = require("./cache.js");
 
-var dictionary = functions.transformTitleToHash(titles);
-
-app.get('/', function(req, res){
-  res.send('Hello World');
-});
-
 app.get('/menu', function(req, res){
   cache.get("menu", function(err, reply) {
-    if(reply == null){
-      // get menu from service provider api
+    if(reply === null){
+      // gets menu from service provider api
       axios.get('http://backend-challenge-pos.pepperhq.com/menu.json')
         .then(response => {
-          // create extendedMenu
-          let menu = response.data.categories;
-          let extendedMenu = functions.createExtendedMenu(menu,dictionary);
-          // saves in Cache
+          // creates extended menu
+          var dictionary = functions.transformTitleToHash(titles);
+          var menu = response.data.categories;
+          var extendedMenu = functions.createExtendedMenu(menu,dictionary);
+          // deals with submenu non existant or data error
+          if(menu == null || extendedMenu === "err"){
+            res.status(400).send({
+              message: 'Error in menu data'
+            });
+          }
+          // saves in cache
           functions.saveInCache(extendedMenu);
           res.send(extendedMenu);
         })
         .catch(error => {
-          res.send(error)
+          res.status(400).send({
+            message: 'It was not possible to fetch menu'
+          });
         });
     } else {
       // loads extendedMenu from cache
