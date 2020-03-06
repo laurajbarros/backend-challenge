@@ -1,0 +1,31 @@
+{
+  "name": "backend-challenge",
+  "version": "1.0.0",
+  "description": "PepperHQ challenge done by Laura Barros",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurajbarros/backend-challenge.git"
+  },
+  "keywords": [
+    "challenge",
+    "nodejs",
+    "express",
+    "endpoint",
+    "cache"
+  ],
+  "author": "laura barros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurajbarros/backend-challenge/issues"
+  },
+  "homepage": "https://github.com/laurajbarros/backend-challenge#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "redis": "^3.0.2"
+  }
+}
