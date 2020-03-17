@@ -19,14 +19,26 @@ const createExtendedMenu = function(menu, dictionary) {
 };
 
 module.exports = {
-  reachThirdParty: function(req, res, callback) {
+  reachThirdParty: (req, res) => new Promise((resolve, reject) => {
     axios.get('http://backend-challenge-pos.pepperhq.com/menu.json')
         .then((response) => {
           const extendedMenu = createExtendedMenu(response.data.categories, titlesToHash(titles));
-          callback(extendedMenu);
+          resolve(extendedMenu);
         })
         .catch((error) => {
-          callback('err');
+          reject(error);
         });
-  },
+  }),
 };
+
+// callback solution
+// reachThirdParty: function(req, res, callback) {
+//   axios.get('http://backend-challenge-pos.pepperhq.com/menu.json')
+//       .then((response) => {
+//         const extendedMenu = createExtendedMenu(response.data.categories, titlesToHash(titles));
+//         callback(extendedMenu);
+//       })
+//       .catch((error) => {
+//         callback('err');
+//       });
+// },

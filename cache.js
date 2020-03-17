@@ -19,15 +19,23 @@ saveInCache = (extendedMenu) => {
 },
 
 fetchAndSaveInCache = (req, res) => {
-  functions.reachThirdParty(req, res, (extendedMenu) => {
-    if (extendedMenu === 'err') {
-      res.send('err');
-    } else {
-      saveInCache(extendedMenu);
-      res.send(extendedMenu);
-    }
-  });
+  functions.reachThirdParty(req, res)
+      .then((extendedMenu) => {
+        saveInCache(extendedMenu);
+        res.send(extendedMenu);
+      })
+      .catch((err) => {
+        res.status(400).send(err);
+      });
 };
+
+// callback solution
+// functions.reachThirdParty(req, res, (extendedMenu) => {
+//   if (extendedMenu === 'err') {
+//     res.send('err');
+//   } else {
+//   }
+// });
 
 fetchFromCache = (req, res) => {
   cache.get('menu', function(err, reply) {
